@@ -1,0 +1,6 @@
+{
+    "learning_rate":{"_type":"uniform","_value":[0.01, 0.2]},
+    "batch_size":{"_type":"choice","_value":[256,1024]},
+    "decay_rate":{"_type" : "uniform","_value":[0.8, 1.0]},
+    "dropout_rate":{"_type" : "uniform","_value":[0,1]}
+}

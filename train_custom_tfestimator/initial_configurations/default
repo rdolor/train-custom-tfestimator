@@ -1,0 +1,43 @@
+# Core setting
+start_date             = 2019.10.18.00.00
+train_period           = -1 
+new_run                = 1
+local_run              = 1
+tuning                 = 0
+
+# Model
+model                  = DNN
+loss                   = 40
+hidden_units           = [128, 64]
+dropout_rate           = 0.11
+one_hot_units          = [2, 35, 359, 3, 2]
+multi_hot_units        = [45]
+learning_rate          = 0.1
+decay_step             = 100
+decay_rate             = 0.96
+class_ratio            = 0.5
+alpha                  = 0.69
+gamma                  = 3.38
+beta                   = 0.5
+
+# Training hyperparameters
+save_summary_steps     = 1000
+log_step_count_steps   = 1000
+save_checkpoints_steps = 1000 
+has_gpu                = 0
+oversample             = 1
+is_test                = 1
+num_epochs             = 0.9
+start_delay_secs       = 10  
+throttle_secs          = 10
+batch_size             = 256
+
+# Directory paths
+train_data_path        = /train_custom_tfestimator/data/
+save_dir               = ./Outputs/
+load_dir               = latest
+store_dir              = latest
+builder_save_dir       = builder_save
+
+
+
