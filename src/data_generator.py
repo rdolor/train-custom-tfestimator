@@ -138,6 +138,7 @@ def parse_to_label_tuples(data_record):
     """
 
     label = tf.reshape(tf.cast(data_record['click'], tf.float32), [-1, 1])
+    del data_record["click"]
     return data_record, label
 
 def get_label_from_TFrecord(file):

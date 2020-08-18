@@ -187,7 +187,7 @@ def saved_model_input_function():
     for feature in INT_MHE_FEAT:
         inference_spec.update({feature: tf.placeholder(tf.int64, shape=(None, None), name=feature)})
 
-    for feature in RESPONSE_FEAT + INT_OHE_FEAT + INT_NUM_FEAT:
+    for feature in INT_OHE_FEAT + INT_NUM_FEAT:
         inference_spec.update({feature: tf.placeholder(tf.int64, shape=(None, 1), name=feature)})
 
 
