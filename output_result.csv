@@ -1,0 +1,2 @@
+ModelName,TrainingStatus,StartDate,TrainingPeriod,IsTest,AUC,AP,Timestamp
+DNN_2020-08-18T15:56:58,Finished,2019.10.18.00.00,-1,1,0.5,0.0007,1597737426
